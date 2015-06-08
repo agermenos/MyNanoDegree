@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="HeaderTitle">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:textColor">#4caf50</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >9pt</item>
+    </style>
+
+    <style name="CustomButtons">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:shadowDx">2.2</item>
+        <item name="android:shadowDy">2.2</item>
+        <item name="android:shadowRadius">2</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >7pt</item>
+        <item name="android:width">200dp</item>
+    </style>
+
+    <style name="CustomGreenButton" parent="CustomButtons">
+
+        <item name="android:textColor" >#daf9f9ef</item>
+        <item name="android:background">#4caf50</item>
+        <item name="android:shadowColor" >#4caf50</item>
+    </style>
+    <style name="CustomOrangeButton" parent="CustomButtons">
+        <item name="android:textColor" >#fff9c4</item>
+        <item name="android:background">#ffa726</item>
+        <item name="android:shadowColor" >#ffa726</item>
+    </style>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/launcher_layout_root"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:gravity="top|center"
+              style="@style/HeaderTitle">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_title"
+            android:id="@+id/tv_Title"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:textStyle="bold" android:layout_gravity="center_horizontal"
+            style="@style/HeaderTitle" android:paddingBottom="30dp"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/media_streamer"
+            style="@style/CustomGreenButton"
+            android:id="@+id/btnSpotifyStreamer" android:layout_below="@+id/tv_Title" android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:onClick="callMediaStreamer"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomGreenButton"
+            android:text="@string/super_duo1"
+            android:id="@+id/btnScoresApp"
+            android:layout_marginTop="5dp" android:layout_below="@+id/btnSpotifyStreamer"
+            android:layout_centerHorizontal="true"
+            android:onClick="callSuperDuo1"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomGreenButton"
+            android:text="@string/super_duo2"
+            android:id="@+id/btnLibraryApp" android:layout_below="@+id/btnScoresApp"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:onClick="callSuperDuo2"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomGreenButton"
+            android:text="@string/ant_terminator"
+            android:id="@+id/btnBuildItBigger" android:layout_below="@+id/btnLibraryApp"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:onClick="callAntTerminator"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomGreenButton"
+            android:text="@string/materialize"
+            android:id="@+id/btnXyzReader" android:layout_below="@+id/btnBuildItBigger"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:onClick="callMaterialize"
+            />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/CustomOrangeButton"
+            android:text="@string/capstone"
+            android:id="@+id/btnMyOwnApp" android:layout_below="@+id/btnXyzReader"
+            android:layout_centerHorizontal="true" android:layout_marginTop="5dp"
+            android:onClick="callCapStone"
+            />
+    <TextView android:id="@+id/toast"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textColor="#FFF"
+            />
+</LinearLayout>
